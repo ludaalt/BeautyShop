@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beauty</title>
+    <title>Beauty Shop</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
     <header>    
         <div class="bg-gray">
             <ul class="nav-menu flex list">
@@ -25,7 +26,7 @@
                     <a href="index.html"><img src="img/logo.png" alt="Main logo" height="80" width="80"></a>
                     <a class="link logo-title" href="index.html">Beauty</a>
                 </div>    
-                <div class="flex content-center">
+                <div class="callback flex content-center">
                     <p><a class="link tel" href="tel:+78121234567">8 (812) 123-45-67</a></p>
                     <button class="button button-call">Обратный звонок</button>
                 </div>
@@ -42,8 +43,11 @@
             </ul>
         </div>        
     </header>
-    <main>
-        <section class="page-description">
+
+
+    
+    <main> 
+         <section class="page-description">
             <div class="flex container">            
                 <div>
                     <h1 class="main-title">Супер кресло</h1>
@@ -52,17 +56,15 @@
                     </p>
                     <button class="button button-more">Подробнее</button>
                 </div>
-                <!--
-                <div>
-                    <p><img src="img/product.png" alt="Product image" width="584" height="584"></p>
-                </div>
-                -->
+                
             </div>
         </section>
-        <section class="products">
+
+    
+        <section class="products bg-gray">
             <div class="container">
                 <h2 class="products__title">Специальные предложения</h2>
-                <div class="flex justify-between">
+                <div class="products_container flex justify-between">
                     <div class="product-card flex content-center">
                         <h3 class="product-card__title">Парикмахерское кресло «Норм» гидравлическое</h3>
                         <p class="product-card__price">9 900 ₽</p>
@@ -90,8 +92,8 @@
                 </div>
             </div>
         </section>
-        <section class="bonus-section">
-            <div class="container flex justify-between">
+        <section class="bonus-section bg-gray">
+            <div class="bonus-section__container container flex justify-between content-center">
                 <div class="bonus-section__item">
                     <h3 class="bonus-section__item__title">Получайте бонусы и подарки</h3>
                     <p class="bonus-section__item__text">Каждый месяц разыгрываем 10&nbsp;000 рублей для наших клиентов</p>
@@ -116,19 +118,21 @@
                         <li class="social-link"><a href="#" aria-label="to-instagram"></a></li>
                     </ul>
                 </div>
-                <div class="flex justify-between content-center">
-                    <p class="address">198555, Невский пр. 140, офис 140</p>                    
+                <div class="contact flex justify-between content-center">
+                    <p class="address">198555, Невский пр.&nbsp;140, офис&nbsp;140</p>                    
                     <p><a class="link tel" href="tel:+78121234567">8 (812) 123-45-67</a></p>
-                    <button class="button button-call">Обратный звонок</button>
+                    <button class="button button-call">Обратный звонок</button>                                       
                 </div>
             </div>
         </div>
-        <div class="footer-bottom">
+        <div class="footer-bottom bg-gray">
             <div class="container flex justify-between">
                 <p>Лучший магазин (с) 2019 Все права защищены. Интернет-магазин оборудования для салонов красоты</p>
                 <p>Политика конфиденциальности</p>
             </div>
         </div>
-    </footer>    
+    </footer> 
+    
+
 </body>
 </html>
