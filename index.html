@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modal.css">
 </head>
 <body>
     
@@ -43,8 +44,6 @@
             </ul>
         </div>        
     </header>
-
-
     
     <main> 
          <section class="page-description">
@@ -59,7 +58,6 @@
                 
             </div>
         </section>
-
     
         <section class="products bg-gray">
             <div class="container">
@@ -132,7 +130,49 @@
             </div>
         </div>
     </footer> 
-    
 
+    <!-- GET JSON -->
+
+    <div class="container">
+        <button id="product-button" style="width: 250px; height: 80px; background-color: lightgreen; margin-top:30px;"
+        >Получить список товаров</button>
+        <div id="product-container">            
+        </div>      
+    </div>
+
+    <!-- MODAL WINDOW -->
+
+    <div class="modal-overlay closed" id="modal-overlay"></div>
+
+    <div class="modal closed" id="modal">
+        <button class="close-button" id="close-button">&#9746;</button>
+        <div class="modal-guts">            			
+            <form method="post" id="form" class="form" action="send.php">                
+                <p class="form-item">
+                    <label for="request-name">Имя:</label>
+                    <input class="form-field" type="text" id="request-name" 
+                    name="user-name" value="" required placeholder="Укажите имя">							
+                </p>
+                <p class="form-item">
+                    <label for="request-phone">Телефон:</label>
+                    <input class="form-field" type="tel" id="request-phone"
+                     name="user-phone" value="" required placeholder="Укажите телефон">
+                </p>
+                <p class="form-item">
+                    <label  for="request-email">E-mail:</label>
+                    <input class="form-field" type="email" id="request-email" 
+                    name="user-email" value="" required placeholder="Укажите email">
+                </p> 
+                <p class="form-item">
+                    <label  for="request-item">Название товара:</label>
+                    <input class="form-field" type="text" id="request-item" 
+                    name="card-item" value="" required>
+                </p> 
+
+                <button type="submit" class="button button-buy">Отправить</button>
+            </form>           
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script> 
 </body>
 </html>
